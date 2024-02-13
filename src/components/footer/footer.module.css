@@ -1,6 +1,9 @@
 .container{
     display: flex;
     margin-top: 6vw;
-    gap:65vw;
+    gap:64vw;
     
+}
+.container p{
+    font-size: 1vw;
 }
