@@ -1,6 +1,27 @@
+
+
+import Image from 'next/image'
+import styles from './contact.module.css'
 const ContactPage=()=> {
     return (
-      <div>ContactPage</div>
+      <div className={styles.container}>
+        <div className={styles.imgcontainer}>
+        <Image src="/contact.png" fill></Image>
+        </div>
+        <div className={styles.formcontainer}>
+        <input id={styles.inp1} placeholder='Name and Surname'>
+        </input>
+        <input id={styles.inp1}placeholder='Name and Surname'>
+        </input>
+        <input id={styles.inp1}placeholder='Name and Surname'>
+        </input>
+        <input id={styles.inp1}placeholder='Name and Surname'>
+        </input>
+        <textarea id={styles.inp2}placeholder='Message'>
+        </textarea>
+        <button id={styles.bt1}>Send</button>
+      </div>
+      </div>
     )
   }
   

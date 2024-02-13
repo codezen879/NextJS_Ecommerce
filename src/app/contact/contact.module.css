@@ -1,0 +1,53 @@
+.container{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 13vw;
+}
+.imgcontainer{
+    position: relative;
+    width:30vw;
+    height: 29vw;
+    margin-left: 10vw;
+}
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vw;
+    width:30vw;
+    height: 30vw;
+   
+}
+#inp1{
+    padding: 0.8vw;
+   background-color: #ffffff33;
+   text-align: start;
+    border: none;
+    border-radius: 5px;
+    font-size: 1vw;
+   
+}
+    #inp2{
+        padding: 0.8vw;
+        height: 13vw;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #ffffff33;
+        text-align: start;
+        border: none;
+        border-radius: 5px;
+        font-size: 1vw;
+    }
+#bt1{
+    background:rgb(48,99,221);
+    border: none;
+    padding: 0.8vw;
+    border-radius: 5px;
+}
+#inp1::placeholder {
+    color: #ffffff; /* Change placeholder color to gray */
+}
+#inp2::placeholder {
+    color: #ffffff; /* Change placeholder color to gray */
+}
+

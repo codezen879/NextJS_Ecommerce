@@ -1,0 +1,53 @@
+.container{
+display: flex;
+gap: 15vw;
+}
+.imgContainer{
+    position: relative;
+    width: 50vw;
+    height:30vw;
+display: flex;
+justify-content: flex-end;
+
+}
+
+.textContainer{
+   width:30vw;
+   height:30vw;
+  
+}
+.textContainer h1{
+    
+    font-size: 7vw;
+}
+.desc{
+    
+    font-size: 1.4vw;
+}
+.btn{
+    display: flex;
+    gap: 2vw;
+    margin-top: 1vw;
+   
+}
+.btn button{
+    padding: 0.9vw;
+    width: 7vw;
+    border-radius: 5px;
+    font-size: 0.9vw;
+    border: none;
+}
+#bt1{
+    background-color:rgb(48,102,224);
+    color: white;
+}
+.imgsec{
+    
+    position: relative;
+    height: 4vw;
+    width: 40vw;
+    margin-bottom: 100px;
+}
+.imgsec{
+
+}

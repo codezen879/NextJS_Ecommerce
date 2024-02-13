@@ -6,6 +6,8 @@
   }
   .logout{
     padding: 9px;
+    cursor: pointer;
+    font-weight: bold;
   }
   
 
@@ -36,5 +38,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    z-index: 100;
   }
 }
