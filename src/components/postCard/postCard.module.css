@@ -1,0 +1,40 @@
+.container{
+
+}
+.card{
+
+}
+.cardDate
+{
+    height: 32vw;
+   width: 32vw;
+   
+   display: flex;
+}
+.cardC{
+    height: 32vw;
+   width: 30.1vw; 
+   border: 1px solid #6f6d6d;
+   border-radius: 5px;
+   text-align: center;
+}
+.cardImage{
+    position: relative;
+   height: 30vw;
+   width: 30vw; 
+   border-radius: 5px;
+}
+
+.cardC span{
+font-size: 1.5vw;
+color: #dfd7d7;
+}
+.dte span{
+    margin-left: -1vw;
+    margin-top: 10vw;
+    font-size: 1.5vw;
+    color: #dfd7d7;
+    display: inline-block; /* Ensures that the element is treated as a block, allowing rotation */
+    transform: rotate(90deg);
+    
+}

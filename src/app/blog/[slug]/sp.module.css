@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    gap: 10vw;
+    margin-top: 2vw;
+}
+.contImage
+{
+    position: relative;
+    height: 40vw;
+    width: 30vw;
+    
+}
+.contImage img{
+    border-radius: 10px;
+}
+.contText{
+ 
+    height: 40vw;
+    width: 30vw;
+}
+
+.contTextProf{
+    margin-top: 3vw;
+    position: relative;
+    height: 3.4vw;
+    width: 3.4vw;
+    border-radius: 30vw;
+    display: flex;
+    gap: 5vw;
+}
+.contTextProf img{
+    border-radius: 30vw;  
+}
+#up1{
+    font-size: 1.4vw;
+    color: rgb(82, 78, 78);
+    display: flex;
+    gap: 3vw;
+}
+#up0{
+    font-size: 5vw;
+}
+#up2{
+    font-size: 1.4vw;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 3vw;
+}
+#dn0{
+    margin-top: 3vw;
+    margin-left: 1vw;
+    font-size: 1.4vw;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 3vw;
+}
