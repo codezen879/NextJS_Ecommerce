@@ -1,10 +1,17 @@
+"use client"
 import Image from "next/image"
 import styles from "./about.module.css"
 const AboutPage=()=> {
+  // const handleClick=()=>{
+  //   console.log(":hi9i")
+  // }
   return (
    
     <div className={styles.container}>
       <div className={styles.textContainer}>
+        <button onClick={()=>console.log("hiii")}>
+          hiii
+        </button>
       <h1>
         About Agency
       </h1>

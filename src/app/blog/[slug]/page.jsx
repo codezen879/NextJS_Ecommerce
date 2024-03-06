@@ -1,6 +1,7 @@
 import Image from "next/image"
 import styles from "./sp.module.css"
-const SinglePostPage=()=> {
+const SinglePostPage=({wwe,k})=> {
+  console.log(k)
     return (
       <div className={styles.container}>
         <div className={styles.contImage}>
