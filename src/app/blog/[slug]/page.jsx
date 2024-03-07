@@ -4,7 +4,7 @@ const SinglePostPage=()=> {
     return (
       <div className={styles.container}>
         <div className={styles.contImage}>
-        <Image src="https://images.pexels.com/photos/2589453/pexels-photo-2589453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" fill ></Image>
+        <Image src="https://images.pexels.com/photos/20367978/pexels-photo-20367978/free-photo-of-landscape-of-rocky-snowcapped-mountains-and-a-forest-in-a-valley.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" fill ></Image>
         </div>
         <div className={styles.contText}>
           <span id={styles.up0} >hiii</span>

@@ -2,7 +2,7 @@
 
 }
 .card{
-
+   
 }
 .cardDate
 {
@@ -12,13 +12,19 @@
    display: flex;
 }
 .cardC{
-    height: 32vw;
+    display: flex;
+    flex-direction: column;
+    height: 33vw;
    width: 30.1vw; 
    border: 1px solid #6f6d6d;
    border-radius: 5px;
    text-align: center;
+   gap: 3vh;
+   
 }
 .cardImage{
+    display: flex;
+    flex-direction: column;
     position: relative;
    height: 30vw;
    width: 30vw; 
@@ -36,5 +42,11 @@ color: #dfd7d7;
     color: #dfd7d7;
     display: inline-block; /* Ensures that the element is treated as a block, allowing rotation */
     transform: rotate(90deg);
+    
+}
+.btn1 button{
+    width: 14vh;
+    text-align: center;
+    height: 4vh;
     
 }
