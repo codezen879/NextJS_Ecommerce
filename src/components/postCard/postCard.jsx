@@ -1,7 +1,9 @@
+'use client'
 import Image from "next/image"
 import styles from "./postCard.module.css"
+import { usePathname, useSearchParams } from 'next/navigation'
 const PostCard=({data})=> {
-
+let id=data.sd-'0';
     return (
       <div className={styles.container}>
         <div className={styles.cardDate}>
@@ -17,11 +19,11 @@ const PostCard=({data})=> {
        </div>
         <span>{data.body}</span>
         <div className={styles.btn1}>
-        <button ><a href={`/blog/${data.id}`}>Read More...</a></button>
-        </div>
+        <button ><a href={`/blog/${id}`}>Read More...</a></button>
+        </div>  
         
         </div>
-        <div className={styles.dte}><span>12/03/24</span></div>
+        <div className={styles.dte}><span>{data.createdAt.toString().slice(0,16)}</span></div>
       </div>
 
       </div>

@@ -6,7 +6,7 @@
 .contImage
 {
     position: relative;
-    height: 40vw;
+    height: 37vw;
     width: 30vw;
     
 }
@@ -32,8 +32,10 @@
     border-radius: 30vw;  
 }
 #up1{
+    display: flex;
+    flex-direction: column;
     font-size: 1.4vw;
-    color: rgb(82, 78, 78);
+    
     display: flex;
     gap: 3vw;
 }
@@ -41,6 +43,8 @@
     font-size: 5vw;
 }
 #up2{
+    display: flex;
+    flex-direction: column;
     font-size: 1.4vw;
     color: rgb(255, 255, 255);
     display: flex;
@@ -53,4 +57,11 @@
     color: rgb(255, 255, 255);
     display: flex;
     gap: 3vw;
+}
+#spn1{
+    width:25vh ;
+}
+.basici{
+    display: flex;
+    gap: 5vh;
 }

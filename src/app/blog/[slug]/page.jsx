@@ -1,6 +1,42 @@
 import Image from "next/image"
-import styles from "./sp.module.css"
-const SinglePostPage=()=> {
+import styles from "./sp.module.css";
+import { getPost,getUser } from "@/lib/data";
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
+
+  const post = await getPost(slug);
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+};
+// const getData=async (slug)=>{
+//   const data  = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
+//   if(!data.ok)
+//   {
+//     throw new Error('Content cant be loaded');
+//   }
+//   return data.json();
+// }
+// const getUser = async()=>{
+//   const users = await fetch("https://jsonplaceholder.typicode.com/users");
+//   if(!users.ok)
+//   {
+//     throw new Error('Content cant be loaded');
+//   }
+//   return users.json();
+// }
+
+const SinglePostPage= async ({params})=> {
+  const {slug}=params;
+  // const data=await getData(slug);
+  // const users=await getUser();
+  // const user=users.filter((user)=>user.id===data.userId)
+  // console.log(user)
+  const user=await getUser(slug);
+  const post=await getPost(slug);
+  console.log(user)
+  console.log(post)
     return (
       <div className={styles.container}>
         <div className={styles.contImage}>
@@ -12,14 +48,15 @@ const SinglePostPage=()=> {
             <div>
             <Image src="https://images.pexels.com/photos/1777479/pexels-photo-1777479.jpeg?auto=compress&cs=tinysrgb&w=600" alt="txt" fill></Image>
             </div>
-            <div>
-            <div id={styles.up1}>
-        <span >hii</span>
-        <span >hii</span>
-        </div>
+            <div className={styles.basici}>
+            
         <div id={styles.up2}>
-        <span >hii</span>
-        <span >hii</span>
+        <span style={{color:"grey"}}>Author</span>
+        <span >{user.username}</span>
+        </div >
+        <div id={styles.up1}>
+        <span style={{color:"grey"}} >Published</span>
+        <span id={styles.spn1}>{post.createdAt.toString().slice(0,16)}</span>
         </div>
             </div>
        

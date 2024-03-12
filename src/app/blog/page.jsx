@@ -1,25 +1,24 @@
 import styles from "./blog.module.css"
 import PostCard from "@/components/postCard/postCard"
-const getData=async()=>{
-const res= await fetch("https://jsonplaceholder.typicode.com/posts");
-if(!res.ok)
-{
-  throw new Error('Content cant be loaded');
+import { getPosts } from "@/lib/data"
+export const metadata = {
+  title: 'Blog',
+  description: 'Next.js starter app description',
 }
-return res.json();
-}
+const BlogPage=async({params})=> {
 
-const BlogPage=async()=> {
-  const data = await getData();
+  const posts=await getPosts();
+  
     return (
       <div>
         <div className={styles.container}>
-        {data.map((data)=>
-        {return <PostCard data={data}/>}
+        {posts?.map((data,index)=>
+        {
+          return <PostCard data={data} key={index}/>}
         )}
         </div>
       </div>
     )
   }
   
-  export default BlogPage
+  export default BlogPage 

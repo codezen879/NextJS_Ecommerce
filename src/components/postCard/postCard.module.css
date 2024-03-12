@@ -36,7 +36,8 @@ font-size: 1.5vw;
 color: #dfd7d7;
 }
 .dte span{
-    margin-left: -1vw;
+    width: 30vh;
+    margin-left: -5vw;
     margin-top: 10vw;
     font-size: 1.5vw;
     color: #dfd7d7;
